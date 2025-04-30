@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="weather.css">
+    <script src="weather.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Lanka Weather Forecast</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sri Lanka Weather Forecast</h1>
+            <p>Get accurate weather forecasts for cities across Sri Lanka</p>
+        </header>
+        
+        <div class="search-container">
+            <select id="city-select">
+                <option value="">Select a city</option>
+                <option value="Colombo">Colombo</option>
+                <option value="Gampaha">Gampaha</option>
+                <option value="Kandy">Kandy</option>
+                <option value="Galle">Galle</option>
+                <option value="Jaffna">Jaffna</option>
+                <option value="Trincomalee">Trincomalee</option>
+                <option value="Anuradhapura">Anuradhapura</option>
+                <option value="Batticaloa">Batticaloa</option>
+                <option value="Negombo">Negombo</option>
+                <option value="Ratnapura">Ratnapura</option>
+                <option value="Badulla">Badulla</option>
+                
+            </select>
+            <button id="search-btn">Get Weather</button>
+        </div>
+        
+        <div id="weather-display">
+            <p>Please select a city to view the weather forecast</p>
+        </div>
+        
+        <div id="current-weather" style="display: none;">
+            <h2 id="city-name"></h2>
+            <div id="weather-icon"></div>
+            <div id="current-temp"></div>
+            <div id="current-condition"></div>
+            <div id="weather-details">
+                <div class="weather-detail">
+                    <span>Humidity:</span>
+                    <span id="humidity"></span>
+                </div>
+                <div class="weather-detail">
+                    <span>Wind Speed:</span>
+                    <span id="wind-speed"></span>
+                </div>
+                <div class="weather-detail">
+                    <span>Precipitation:</span>
+                    <span id="precipitation"></span>
+                </div>
+                <div class="weather-detail">
+                    <span>Last Updated:</span>
+                    <span id="last-updated"></span>
+                </div>
+            </div>
+        </div>
+        
+        <h3 id="forecast-title" style="display: none;">5-Day Forecast</h3>
+        <div id="forecast-container"></div>
+        
+        <footer>
+            <p>Sri Lanka Weather Forecast System &copy; 2025 | </p>
+        </footer>
+    </div>
+</body>
+</html>
